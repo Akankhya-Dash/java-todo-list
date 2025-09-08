@@ -2,36 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Static To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>My Static To-Do List</h1>
-  </header>
-  <main>
-    <ul>
-      <li>
-        <input type="checkbox" id="task1" />
-        <label for="task1">Buy groceries</label>
-      </li>
-      <li>
-        <input type="checkbox" id="task2" />
-        <label for="task2">Complete Java project</label>
-      </li>
-      <li>
-        <input type="checkbox" id="task3" />
-        <label for="task3">Read a book</label>
-      </li>
-      <li>
-        <input type="checkbox" id="task4" />
-        <label for="task4">Go for a walk</label>
-      </li>
-    </ul>
-  </main>
-  <footer>
-    <p>© 2025 Akankhya Dash</p>
-  </footer>
+  <div class="container">
+    <header>
+      <h1>🧠 My Awesome To-Do List</h1>
+      <p>Stay organized, stay happy 😊</p>
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5kMGJjY2t6YzB1YmxxeGp5bG1zOGNrdXB4cmJlc2wxMHkzN3ozYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cNzJ3i5WGG1iU/giphy.gif" alt="Todo GIF" />
+    </header>
+
+    <main>
+      <section class="task-form">
+        <input type="text" placeholder="📝 Type your first task here..." />
+        <input type="text" placeholder="➕ Add another one..." />
+        <input type="text" placeholder="➕ And another..." />
+        <p class="note">This is a static demo – tasks are not saved</p>
+      </section>
+
+      <section class="task-list">
+        <h2>✅ Mark Done</h2>
+        <ul>
+          <li>
+            <input type="checkbox" id="t1">
+            <label for="t1">Task 1</label>
+          </li>
+          <li>
+            <input type="checkbox" id="t2">
+            <label for="t2">Task 2</label>
+          </li>
+          <li>
+            <input type="checkbox" id="t3">
+            <label for="t3">Task 3</label>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with ❤️ by Akankhya</p>
+    </footer>
+  </div>
 </body>
 </html>
